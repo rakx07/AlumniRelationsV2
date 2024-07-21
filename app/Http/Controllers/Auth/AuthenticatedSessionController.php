@@ -28,8 +28,14 @@ class AuthenticatedSessionController extends Controller
         $request->authenticate();
 
         $request->session()->regenerate();
+        
+        //added lien for admin dashboard
+        if ($request->user()->usertype === 'admin') {
+            return redirect('admin/dashboard');
+        }
 
-        return redirect()->intended(RouteServiceProvider::HOME);
+        // return redirect()->intended(RouteServiceProvider::HOME);
+        return redirect()->intended('dashboard');
     }
 
     /**
