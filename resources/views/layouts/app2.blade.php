@@ -22,6 +22,15 @@
             max-width: 250px;
             height: 100%;
             background-color: #424141;
+            color: white;
+        }
+        #sidebar-wrapper .list-group-item {
+            background-color: #424141;
+            color: white;
+            border: none;
+        }
+        #sidebar-wrapper .list-group-item:hover {
+            background-color: #575757;
         }
         #page-content-wrapper {
             flex: 1;
@@ -36,23 +45,23 @@
 <body>
     <div class="d-flex" id="wrapper">
         <!-- Sidebar -->
-        <div class="bg-light border-right" id="sidebar-wrapper">
-            <div class="sidebar-heading">Admin Dashboard</div>
+        <div class="border-right" id="sidebar-wrapper">
+            <div class="sidebar-heading">Alumni Relations</div>
             <div class="list-group list-group-flush">
-                <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
-                <a href="#alumniSubmenu" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action bg-light">Alumni</a>
+                <a href="#" class="list-group-item list-group-item-action">Dashboard</a>
+                <a href="#alumniSubmenu" data-toggle="collapse" aria-expanded="false" class="list-group-item list-group-item-action">Alumni</a>
                 <ul class="collapse list-unstyled" id="alumniSubmenu">
                     <li>
-                        <a href="#" class="list-group-item list-group-item-action bg-light">Add</a>
+                        <a href="#" class="list-group-item list-group-item-action">Add</a>
                     </li>
                     <li>
-                        <a href="#" class="list-group-item list-group-item-action bg-light">Update</a>
+                        <a href="#" class="list-group-item list-group-item-action">Update</a>
                     </li>
                     <li>
-                        <a href="#" class="list-group-item list-group-item-action bg-light">Delete</a>
+                        <a href="#" class="list-group-item list-group-item-action">Delete</a>
                     </li>
                 </ul>
-                <a href="#" class="list-group-item list-group-item-action bg-light">Reports</a>
+                <a href="#" class="list-group-item list-group-item-action">Reports</a>
             </div>
         </div>
         <!-- /#sidebar-wrapper -->
