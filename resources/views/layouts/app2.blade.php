@@ -8,6 +8,30 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+        }
+        #wrapper {
+            display: flex;
+            align-items: stretch;
+            height: 100%;
+        }
+        #sidebar-wrapper {
+            min-width: 250px;
+            max-width: 250px;
+            height: 100%;
+            background-color: #424141;
+        }
+        #page-content-wrapper {
+            flex: 1;
+            overflow-y: auto;
+        }
+        .list-group-item {
+            border: none;
+            border-radius: 0;
+        }
+    </style>
 </head>
 <body>
     <div class="d-flex" id="wrapper">
