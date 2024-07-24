@@ -32,7 +32,14 @@ return [
     |            "postmark", "log", "array", "failover", "roundrobin"
     |
     */
-
+    'stream' => [
+        'ssl' => [
+            'verify_peer' => false,
+            'verify_peer_name' => false,
+            'allow_self_signed' => true,
+        ],
+    ],
+    
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
@@ -108,7 +115,7 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'jcseran@ndmu.edu.ph'),
+        'address' => env('MAIL_FROM_ADDRESS', 'alumni-relations@ndmu.edu.ph'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
