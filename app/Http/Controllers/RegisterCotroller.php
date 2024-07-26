@@ -12,7 +12,7 @@ use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
 {
-    use RegistersUsers;
+    // use RegistersUsers;
 
     protected function validator(array $data)
     {
