@@ -1,5 +1,11 @@
 <x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
+    <div class="flex justify-center mt-6">
+        <a href="/">
+            <img src="{{ asset('images/ndmulogo.png') }}" alt="NDMU Logo" class="w-20 h-20 fill-current text-gray-500" />
+        </a>
+    </div>
+
+    <form method="POST" action="{{ route('register') }}" class="mt-8">
         @csrf
 
         <!-- Name -->
@@ -26,7 +32,7 @@
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
-       <!-- Phone Number -->
+        <!-- Phone Number -->
         <div class="mt-4">
             <x-input-label for="phone" :value="__('Phone')" />
             <x-text-input id="phone" class="block mt-1 w-full" type="text" name="phone" :value="old('phone')" required autocomplete="phone" />
