@@ -1,6 +1,6 @@
 <x-guest-layout>
     <!-- Session Status -->
-    <div class="flex justify-center mt-6">
+    <div class="flex justify-center mt-5">
         <a href="/">
             <img src="{{ asset('images/ndmulogo.png') }}" alt="NDMU Logo" class="w-20 h-20 fill-current text-gray-500" />
         </a>
