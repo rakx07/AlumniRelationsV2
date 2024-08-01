@@ -1,5 +1,10 @@
 <x-guest-layout>
     <!-- Session Status -->
+    <div class="flex justify-center mt-6">
+        <a href="/">
+            <img src="{{ asset('images/ndmulogo.png') }}" alt="NDMU Logo" class="w-20 h-20 fill-current text-gray-500" />
+        </a>
+    </div>
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
     <form method="POST" action="{{ route('login') }}">
