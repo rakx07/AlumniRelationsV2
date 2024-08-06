@@ -1,6 +1,6 @@
-@extends('layouts.app2')
+@extends('layouts.admindashlayout')
 
-@section('title', 'Admin Dashboard')
+<!-- @section('title', 'Admin Dashboard') -->
 
 @section('content')
     <h1>Welcome to the Admin Dashboard</h1>
